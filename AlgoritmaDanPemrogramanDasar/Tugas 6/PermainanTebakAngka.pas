@@ -13,8 +13,8 @@ begin
      repeat
            write('Tebakan anda : ');readln(tebakan);
            if(tebakan > angkaAcak) then
-           writeln('Tebakan anda terlalu besar')
-           else
+           writeln('Tebakan anda terlalu besar');
+           if(tebakan < angkaAcak) then
            writeln('Tebakan anda terlalu kecil');
 
            i:=i+1;
