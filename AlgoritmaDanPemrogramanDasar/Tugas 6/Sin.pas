@@ -9,12 +9,12 @@ var
 begin
   clrscr;
 
-  for i := 1 to 359 do
+  for i := 0 to 359 do
   begin
     x := i * (pi / 180);
     f := sin(x);
     writeln('SIN( ', i, ')      :  ', f: 0: 4);
-    if i mod 20 = 0 then
+    if (i mod 20 = 0) and (i <> 0) then
     begin
       writeln('Tekan enter untuk melanjutkan');
       readln;
