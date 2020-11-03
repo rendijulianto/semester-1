@@ -14,13 +14,12 @@ begin
     x := i * (pi / 180);
     f := sin(x);
     writeln('SIN( ', i, ')      :  ', f: 0: 4);
-    if (i mod 20 = 0) and (i <> 0) then
+    if (i mod 20 = 19) then
     begin
       writeln('Tekan enter untuk melanjutkan');
       readln;
       Clrscr;
     end;
   end;
-  writeln('--------------------------------------------------------------');
   readln;
 end.
