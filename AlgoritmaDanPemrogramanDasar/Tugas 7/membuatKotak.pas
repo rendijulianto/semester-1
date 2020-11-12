@@ -6,6 +6,7 @@ begin
 	 write('Y1 : ');readln(y1);
 	 write('X2 : ');readln(x2);
 	 write('Y2 : ');readln(y2);
+	ClrScr;
 
      gotoxy(x1,y1);
      write('+');
@@ -40,3 +41,4 @@ begin
 
    readln;
 end.
+
