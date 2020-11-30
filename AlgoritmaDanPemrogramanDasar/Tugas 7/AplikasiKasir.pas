@@ -9,8 +9,11 @@ var
   nomor_transaksi, total_bayar, total_berat, i, y, harga_satuan, berat_satuan, jumlah_pesan, harga_total,
   berat_total, dibayar: integer;
   diskon, total_diskon: real;
+  lanjut:char;
 
 begin
+  repeat
+  ClrScr;
   randomize;
   i := 1;
   y := 9;
@@ -93,5 +96,8 @@ begin
   write('Dibayar               : Rp. ');
   readln(dibayar);
   writeln('Kembalian             : Rp. ', dibayar - total_bayar);
+  write('Apakah Ingin Transaksi Lagi [Y/N] : ');readln(lanjut);
+  until(upcase(lanjut) = 'N');
+  writeln('-------------Transaksi Selesai-------------');
   readln;
 end.
